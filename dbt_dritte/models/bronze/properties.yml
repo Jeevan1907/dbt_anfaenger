@@ -1,0 +1,28 @@
+models:
+    - name: transactions
+      config:
+            materialized: table
+      columns:
+        - name: transactionID
+          data_tests:
+                - unique
+                - not_null
+        - name: quantity
+          data_tests:
+                - quantity
+          config: 
+            severity: warn
+    - name: customers
+      config:
+            materialized: view
+      columns:
+          - name: customerID
+            data_tests:
+                  - unique
+                  - not_null
+          - name: email_address
+            data_tests:
+                  - email
+          
+    
+      
