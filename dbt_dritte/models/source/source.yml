@@ -1,0 +1,11 @@
+sources:
+     - name: sales
+       database: samples
+       schema: bakehouse
+       config:
+        enabled: true
+       tables:
+        - name: sales_transactions
+        - name: sales_franchises
+        - name: sales_customers
+        - name: sales_suppliers
