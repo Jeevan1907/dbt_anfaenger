@@ -1,0 +1,13 @@
+snapshots:
+  - name: orders_snapshot
+    relation: ref('custo_ite')
+    config:
+      database: pratice
+      schema: gold
+      strategy: timestamp
+      updated_at: timest
+      unique_key: customer_sk
+      dbt_valid_to_current: "to_date('9999-12-31')"
+      snapshot_meta_column_names:
+        dbt_valid_from: start_date
+        dbt_valid_to: end_date

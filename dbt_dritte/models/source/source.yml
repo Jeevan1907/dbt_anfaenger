@@ -9,3 +9,8 @@ sources:
         - name: sales_franchises
         - name: sales_customers
         - name: sales_suppliers
+     - name: custom_cdc
+       database: pratice
+       schema: default
+       tables:
+        - name: custo

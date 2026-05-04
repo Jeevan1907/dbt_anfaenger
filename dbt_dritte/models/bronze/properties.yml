@@ -9,9 +9,8 @@ models:
                 - not_null
         - name: quantity
           data_tests:
-                - quantity
-          config: 
-            severity: warn
+                - quantity 
+          severity: warn
     - name: customers
       config:
             materialized: view
